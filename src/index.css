@@ -1,0 +1,48 @@
+iframe {
+  display: none;
+}
+
+.card {
+  background-color: #fbfbfb;
+  cursor: grab;
+}
+
+.card-header {
+  padding: 10px 15px;
+  font-weight: bold;
+}
+
+.reorder-group {
+  list-style: none;
+  padding: 0;
+}
+
+.issue {
+  background-color: #fff;
+}
+
+.issue-title {
+  font-weight: 500;
+}
+
+.reorder-item {
+  list-style: none;
+  padding: 10px 12px;
+}
+
+.repo-info {
+  display: flex;
+  padding-bottom: 20px;
+  padding-left: 5px;
+}
+
+.star-description {
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+
+.star-image {
+  width: 20px;
+  height: 20px;
+}
