@@ -33,6 +33,10 @@ The <b>Github Kanban Board</b> project is a web application that allows users to
     <strong>Profile and Repo Links:</strong>
     <p>Users can visit the profile of the repository owner and navigate to the repository by clicking on links provided under the input field.</p>
   </li>
+  <li>
+    <strong>Full Test Coverage:</strong>
+    <p>Coverage ensures that all aspects of the application, including input handling, UI rendering, state management, and user interactions, are thoroughly tested to guarantee functionality and reliability, encompassing edge cases, error handling, and integration testing for comprehensive validation.</p>
+  </li>
 </ol>
 
 <h2>Technologies:</h2>
@@ -42,6 +46,9 @@ The <b>Github Kanban Board</b> project is a web application that allows users to
   </li>
   <li>
     <img style="width: 25px; height: 25px; object-fit: cover;" src="public/assets/redux.png"/> <b>Redux</b>
+  </li>
+  <li>
+    <img style="width: 25px; height: 25px; object-fit: cover;" src="public/assets/jest.png"/> <b>Jest</b>
   </li>
   <li>
     <img style="width: 25px; height: 25px; object-fit: cover;" src="public/assets/bootstrap.png"/> <b>Bootstrap</b>
@@ -68,6 +75,6 @@ The <b>Github Kanban Board</b> project is a web application that allows users to
   <li>The application is developed using React with TypeScript for enhanced type safety.</li>
   <li>Ant Design UI library is utilized for building the user interface components, providing a modern and responsive design.</li>
   <li>Redux is employed as the state manager to manage the application's state and handle data flow.</li>
-  <li>React Testing Library is used for testing React components, ensuring reliable and robust code.</li>
+  <li>Jest Testing Library is used for testing React components, ensuring reliable and robust code - use commands <code>npm test</code> or <code>npx jest</code>. </li>
 </ol>
 

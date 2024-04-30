@@ -11,7 +11,7 @@ interface BoardType {
   issues: IssueType[];
 }
 
-const initialBoards: BoardType[] = [
+export const initialBoards: BoardType[] = [
   { id: 1, title: "Todo", issues: [] },
   { id: 2, title: "In Progress", issues: [] },
   { id: 3, title: "Done", issues: [] },
@@ -107,7 +107,11 @@ export const Board: React.FC = () => {
   }
 
   if (issues.length === 0) {
-    return <div className="text-center">No issues available</div>;
+    return (
+      <div className="text-center" data-testid="no-issues">
+        No issues available
+      </div>
+    );
   }
 
   return (
@@ -117,12 +121,14 @@ export const Board: React.FC = () => {
         row-cols-1
         row-cols-md-3
         "
+      data-testid="boards"
     >
       {boards.map((board) => (
         <div
           key={board.id}
           onDragOver={(event) => event.preventDefault()}
           onDrop={() => dropIssueHandler(board)}
+          data-testid="board"
         >
           <div
             className="
